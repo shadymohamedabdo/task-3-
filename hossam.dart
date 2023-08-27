@@ -2,14 +2,21 @@
 import 'dart:io';
 import 'package:hossam/hossam.dart' as hossam;
 void main() {
-  /// task 3 (Take a list and write a program that prints out all the elements of the list that are less than 5)
+  /// task 4 (Create a program that asks the user for a number and then prints out a list of all the divisors of that number)
 
-  List <int> x = [3,2,4,7,9,1,4,8];
-  for (var i in x ){
-    if (i<5)
-    print(i);
-}
+  stdout.write('please choose a number : ');
+  String? x = stdin.readLineSync();
+  int number = int.parse(x!);
+  for(var i = 1; i<= number; i++){
+    if (number % i ==0){
+      print(i);
+    }
+
   }
+
+
+}
+
 
 
 
